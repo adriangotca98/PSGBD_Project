@@ -1,25 +1,23 @@
-DECLARE
-    TYPE varr IS VARRAY (1000) OF VARCHAR2(255);
-    CURSOR id1 IS SELECT id_team
-                  FROM team;
-    CURSOR id2 IS SELECT id_team
-                  FROM team;
+CREATE OR REPLACE PROCEDURE POPULATE_MATCH_AND_PLAY AS
+    TYPE vector IS TABLE OF INT;
+    previous_round vector;
+    this_round vector;
     id_referee INT;
+    id_match   INT;
+    id_play    INT;
     match_time DATE;
     counter    INT;
+    attendance INT;
 BEGIN
-    FOR id_team1 IN id1
-        LOOP
-            counter := 0;
-            FOR id_team2 IN id2
-                LOOP
-                    IF id_team1.id_team <> id_team2.id_team THEN
-                        counter := counter + 7;
-                        id_referee := dbms_random.value(1, 100);
-                        match_time := TO_DATE('01-01-1990', 'MM-DD-YYYY') + counter +
-                                      TRUNC(DBMS_RANDOM.VALUE(0, 23) / 24);
-                        INSERT INTO match VALUES (match_time, id_team1.id_team, id_team2.id_team, id_referee, null);
-                    END IF;
-                END LOOP;
-        END LOOP;
+    id_match:=1;
+    id_play:=1;
+    select id_team bulk collect into this_round from studenti order by id_team;
+    for i in this_round.first..this_round.second loop
+        insert into play values (id_play,id_match,i);
+        id_play:=id_play+1;
+        i:=i+1;
+        insert into play values (id_play,id_match,i);
+        id_play:=id_play+1;
+    end loop;
+    for id_team1 in
 END;

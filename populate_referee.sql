@@ -1,5 +1,4 @@
-SET SERVEROUTPUT ON;
-DECLARE
+CREATE OR REPLACE PROCEDURE POPULATE_REFEREE AS
     TYPE varr IS VARRAY (1000) OF VARCHAR2(255);
     lista_nume    varr := varr('Oliver', 'Jack', 'Harry', 'Jacob', 'Charlie', 'Thomas', 'George', 'Oscar', 'James',
                                'William', 'Noah', 'Alfie', 'Joshua', 'Muhammad', 'Henry', 'Leo', 'Archie', 'Ethan',

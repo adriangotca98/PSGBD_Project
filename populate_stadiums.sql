@@ -1,4 +1,4 @@
-DECLARE
+CREATE OR REPLACE PROCEDURE POPULATE_STADIUMS AS
     TYPE varr IS VARRAY (400) OF VARCHAR2(255);
     lista_nume      varr := varr('Adams Park', 'Alexandra Stadium', 'Almondvale Stadium', 'Amex Stadium', 'Anfield',
                                  'Ashton Gate', 'B2net Stadium', 'Balmoor', 'Bayview Stadium', 'Bescot Stadium',

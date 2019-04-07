@@ -1,5 +1,4 @@
-SET SERVEROUTPUT ON;
-DECLARE
+CREATE OR REPLACE PROCEDURE POPULATE_TEAMS AS
     TYPE varr IS VARRAY (1050) OF VARCHAR2(255);
     lista_echipe  varr := varr('A.F.C. Aldermaston', 'A.F.C. Blackpool', 'A.F.C. Bournemouth', 'A.F.C. Bridgnorth',
                                'AFC Croydon Athletic', 'A.F.C. Darwen', 'A.F.C. Dunstable', 'A.F.C. Emley',
