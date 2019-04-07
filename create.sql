@@ -1,105 +1,67 @@
-BEGIN
-    EXECUTE IMMEDIATE 'DROP TABLE stadium CASCADE CONSTRAINTS';
-    EXECUTE IMMEDIATE 'DROP TABLE team CASCADE CONSTRAINTS';
-    EXECUTE IMMEDIATE 'DROP TABLE player CASCADE CONSTRAINTS';
-    EXECUTE IMMEDIATE 'DROP TABLE referee CASCADE CONSTRAINTS';
-    EXECUTE IMMEDIATE 'DROP TABLE match CASCADE CONSTRAINTS';
-    EXECUTE IMMEDIATE 'DROP TABLE goal CASCADE CONSTRAINTS';
-    EXECUTE IMMEDIATE 'DROP TABLE CARDS CASCADE CONSTRAINTS';
-    EXECUTE IMMEDIATE 'DROP TABLE FIRST11 CASCADE CONSTRAINTS';
-    EXECUTE IMMEDIATE 'DROP TABLE PLAY CASCADE CONSTRAINTS';
-    EXECUTE IMMEDIATE 'DROP TABLE SUBSTITUTION CASCADE CONSTRAINTS';
-    EXECUTE IMMEDIATE 'CREATE TABLE stadium
+create procedure create_tables_indexes as
+begin
+    execute immediate 'drop table stadium cascade constraints';
+    execute immediate 'drop table team cascade constraints';
+    execute immediate 'drop table player cascade constraints';
+    execute immediate 'drop table referee cascade constraints';
+    execute immediate 'drop table match cascade constraints';
+    execute immediate 'drop table goal cascade constraints';
+    execute immediate 'create table stadium
     (
-        id_stadium    INT          NOT NULL PRIMARY KEY,
-        name          VARCHAR2(50) NOT NULL,
-        city          VARCHAR2(20) NOT NULL,
-        founding_date DATE,
-        capacity      INT
+        id_stadium    int          not null primary key,
+        name          varchar2(50) not null,
+        city          varchar2(20) not null,
+        founding_date date,
+        capacity      int
     )';
-    EXECUTE IMMEDIATE 'CREATE TABLE team
+    execute immediate 'create table team
     (
-        id_team       INT          NOT NULL PRIMARY KEY,
-        name          VARCHAR2(50) NOT NULL,
-        id_stadium    INT          NOT NULL,
-        founding_date DATE,
-        budget INT,
-        CONSTRAINT team_fk_id_stadium FOREIGN KEY (id_stadium) REFERENCES stadium (id_stadium)
+        id_team       int          not null primary key,
+        name          varchar2(50) not null,
+        id_stadium    int          not null,
+        founding_date date,
+        constraint fk_id_stadium foreign key (id_stadium) references stadium (id_stadium)
     )';
-    EXECUTE IMMEDIATE ' CREATE TABLE player
+    execute immediate ' create table player
     (
-        id_player     INT          NOT NULL PRIMARY KEY,
-        id_team       INT,
-        first_name    VARCHAR2(50) NOT NULL,
-        last_name     VARCHAR2(50) NOT NULL,
-        nationality   VARCHAR2(50),
-        date_of_birth DATE,
-        position      VARCHAR(10)  NOT NULL,
-        value         INT,
-        CONSTRAINT player_fk_id_team FOREIGN KEY (id_team) REFERENCES team (id_team)
+        id_player     int          not null primary key,
+        id_team       int,
+        first_name    varchar2(50) not null,
+        last_name     varchar2(50) not null,
+        nationality   varchar2(50),
+        date_of_birth date,
+        position      varchar(10)  not null,
+        constraint fk_id_team foreign key (id_team) references team (id_team)
     )';
-    EXECUTE IMMEDIATE 'CREATE TABLE referee
+    execute immediate 'create table referee
     (
-        id_referee INT          NOT NULL PRIMARY KEY,
-        first_name VARCHAR(50)  NOT NULL,
-        last_name  VARCHAR2(50) NOT NULL
+        id_referee int          not null primary key,
+        first_name varchar(50)  not null,
+        last_name  varchar2(50) not null
     )';
-    EXECUTE IMMEDIATE 'CREATE TABLE match
+    execute immediate 'create table match
     (
-        id_match INT NOT NULL PRIMARY KEY,
-        id_referee INT NOT NULL,
-        match_time DATE NOT NULL,
-        attendance INT NOT NULL,
-        CONSTRAINT match_fk_id_referee FOREIGN KEY (id_referee) REFERENCES referee (id_referee)
+        match_time date not null,
+        id_team1   int  not null,
+        id_team2   int  not null,
+        id_referee int,
+        attendance int,
+        constraint fk_id_team1 foreign key (id_team1) references team (id_team),
+        constraint fk_id_team2 foreign key (id_team2) references team (id_team),
+        constraint fk_id_referee foreign key (id_referee) references referee (id_referee),
+        constraint pk_match primary key (match_time, id_team1)
     )';
-    EXECUTE IMMEDIATE 'CREATE TABLE goal
+    execute immediate 'create table goal
     (
-        id_goal    INT  NOT NULL PRIMARY KEY,
-        id_match   INT  NOT NULL,
-        goal_time  INT NOT NULL,
-        id_player  INT  NOT NULL,
-        id_player_assist  INT  NOT NULL,
-        type VARCHAR2(55),
-        CONSTRAINT GOAL_FK_ID_MATCH FOREIGN KEY (ID_MATCH) REFERENCES MATCH(ID_MATCH),
-        CONSTRAINT GOAL_FK_ID_PLAYER FOREIGN KEY (ID_PLAYER) REFERENCES PLAYER(ID_PLAYER),
-        CONSTRAINT GOAL_FK_ID_PLAYER_ASSIST FOREIGN KEY (ID_PLAYER_ASSIST) REFERENCES PLAYER(ID_PLAYER)
+        id_goal    int  not null primary key,
+        id_team1   int  not null,
+        match_time date not null,
+        id_player  int  not null,
+        constraint fk_match foreign key (match_time, id_team1) references match (match_time, id_team1),
+        constraint fk_id_player foreign key (id_player) references player (id_player)
     )';
-    EXECUTE IMMEDIATE 'CREATE TABLE CARDS
-    (
-        ID_CARD INT NOT NULL PRIMARY KEY,
-        ID_PLAYER INT NOT NULL,
-        ID_MATCH INT NOT NULL,
-        CARD_TIME INT NOT NULL,
-        CONSTRAINT CARDS_fk_id_MATCH FOREIGN KEY (id_MATCH) REFERENCES MATCH(id_MATCH),
-        CONSTRAINT CARDS_FK_ID_PLAYER FOREIGN KEY (ID_PLAYER) REFERENCES PLAYER(ID_PLAYER)
-    )';
-    EXECUTE IMMEDIATE 'CREATE TABLE FIRST11
-    (
-        ID_FIRST11 INT NOT NULL PRIMARY KEY,
-        ID_PLAYER INT NOT NULL,
-        ID_MATCH INT NOT NULL,
-        CONSTRAINT FIRST11_FK_ID_PLAYER FOREIGN KEY (ID_PLAYER) REFERENCES PLAYER(ID_PLAYER),
-        CONSTRAINT FIRST11_FK_ID_MATCH FOREIGN KEY (ID_MATCH) REFERENCES MATCH(ID_MATCH)
-    )';
-    EXECUTE IMMEDIATE 'CREATE TABLE SUBSTITUTION
-    (
-        ID_SUBSTITUTION INT NOT NULL PRIMARY KEY,
-        ID_PLAYER1 INT NOT NULL,
-        ID_PLAYER2 INT NOT NULL,
-        ID_MATCH INT NOT NULL,
-        SUBSTITUTION_TIME INT NOT NULL,
-        CONSTRAINT SUBSTITUTION_FK_ID_PLAYER1 FOREIGN KEY (ID_PLAYER1) REFERENCES PLAYER(ID_PLAYER),
-        CONSTRAINT SUBSTITUTION_FK_ID_PLAYER2 FOREIGN KEY (ID_PLAYER2) REFERENCES PLAYER(ID_PLAYER),
-        CONSTRAINT SUBSTITUTION_FK_ID_MATCH FOREIGN KEY (ID_MATCH) REFERENCES MATCH(ID_MATCH)
-    )';
-    EXECUTE IMMEDIATE 'CREATE TABLE PLAY
-    (
-        ID_PLAY INT NOT NULL PRIMARY KEY,
-        ID_MATCH INT NOT NULL,
-        ID_TEAM INT NOT NULL,
-        CONSTRAINT PLAY_FK_ID_MATCH FOREIGN KEY (ID_MATCH) REFERENCES MATCH(ID_MATCH),
-        CONSTRAINT PLAY_fk_id_team FOREIGN KEY (id_team) REFERENCES team (id_team)
-    )';
-    EXECUTE IMMEDIATE 'CREATE INDEX idx_team
-    ON PLAYER(id_team)';
-END;
+    execute immediate 'create index idx_team
+    on player(id_team)';
+end;
+/
+

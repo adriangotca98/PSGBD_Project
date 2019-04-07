@@ -1,5 +1,6 @@
-BEGIN
-    POPULATE_REFEREE();
-    POPULATE_STADIUMS();
-    POPULATE_TEAMS();
+begin
+    --populate_referee();
+    --populate_stadiums();
+    --populate_team();
+    --populate_match_and_play();
 end;

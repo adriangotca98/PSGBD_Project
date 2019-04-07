@@ -39,8 +39,7 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="GAMBLER: schema" type="3abd1b6a:OraImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="PLAY: table" type="942f455b:OraImplModel$Table" />
+        <item name="routines" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -57,34 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2500">
-              <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/populate_all.sql">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/populate_match.sql">
+        <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_MATCH_AND_PLAY.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/populate_players.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1887">
-              <caret line="111" column="16" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+            <state relative-caret-position="119">
+              <caret line="7" column="7" lean-forward="true" selection-end-line="162" />
             </state>
           </provider>
         </entry>
@@ -97,12 +73,16 @@
       <find>values</find>
       <find>end</find>
       <find>;</find>
+      <find>dbms</find>
+      <find>M</find>
     </findStrings>
     <replaceStrings>
       <replace>FOR</replace>
       <replace>VALUES</replace>
       <replace>END</replace>
       <replace>/</replace>
+      <replace>s</replace>
+      <replace>m</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -116,21 +96,30 @@
         <option value="$PROJECT_DIR$/populate_stadiums.sql" />
         <option value="$PROJECT_DIR$/populate_team.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console_4.sql" />
-        <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/CREATE_TABLES_INDEXES.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console_5.sql" />
         <option value="$PROJECT_DIR$/populate_referee.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console_6.sql" />
         <option value="$PROJECT_DIR$/create.sql" />
+        <option value="$PROJECT_DIR$/insert_individual_match.sql" />
+        <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/INSERT_INIVIDUAL_MATCH.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console.sql" />
         <option value="$PROJECT_DIR$/populate_match.sql" />
+        <option value="$PROJECT_DIR$/populate_all.sql" />
+        <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/CREATE_TABLES_INDEXES.sql" />
+        <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_REFEREE.sql" />
+        <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_STADIUMS.sql" />
+        <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_TEAMS.sql" />
+        <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/GETMAXIMUMATTENDANCE.sql" />
+        <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/INSERT_INDIVIDUAL_MATCH.sql" />
+        <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_MATCH_AND_PLAY.sql" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1709" />
-    <option name="y" value="-32" />
-    <option name="width" value="1539" />
-    <option name="height" value="819" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -188,40 +177,24 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1359" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Database" order="0" visible="true" weight="0.151417" />
+      <window_info active="true" content_ui="combo" id="Database" order="0" visible="true" weight="0.28441754" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="4" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="5" sideWeight="0.49878544" visible="true" weight="0.24333926" />
+      <window_info anchor="bottom" id="Database Console" order="5" sideWeight="0.49848714" visible="true" weight="0.2667758" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50121456" side_tool="true" weight="0.24333926" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5015129" side_tool="true" weight="0.22749591" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="0" weight="0.24939272" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="0" weight="0.24844721" />
       <window_info anchor="right" id="Structure" order="1" side_tool="true" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Database" order="1" visible="true" weight="0.18229954" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="0" sideWeight="0.49924356" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="0" weight="0.24962178" />
-      <window_info anchor="right" id="Structure" order="1" side_tool="true" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a9645dc5-87bd-4c8a-a1a6-2b879793eae9/console.sql">
@@ -247,15 +220,6 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console_2.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/table/MATCH">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
     </entry>
     <entry file="das://213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/GETMAXIMUMATTENDANCE">
       <provider selected="true" editor-type-id="text-editor">
@@ -294,34 +258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_REFEREE.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/GETMAXIMUMATTENDANCE.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/CREATE_TABLES_INDEXES.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_STADIUMS.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console_5.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -329,14 +265,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/populate_players.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="111" column="16" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+    <entry file="das://213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/table/REFEREE">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="das://213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/table/REFEREE">
+    <entry file="file://$PROJECT_DIR$/populate_referee.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_team.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/table/PLAYER/index/IDX_TEAM">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console_6.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/INSERT_ROUND.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_players.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/INSERT_INIVIDUAL_MATCH.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/table/PLAY">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/table/MATCH">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true">
@@ -363,47 +354,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console.sql">
+    <entry file="file://$PROJECT_DIR$/insert_individual_match.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="243">
+          <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/populate_referee.sql">
+    <entry file="file://$PROJECT_DIR$/populate_match.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        <state relative-caret-position="242">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/populate_team.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/table/PLAYER/index/IDX_TEAM">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console_6.sql">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/create.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2500">
-          <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+        <state relative-caret-position="209">
+          <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/populate_all.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/populate_match.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_REFEREE.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_TEAMS.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5202">
+          <caret line="306" column="4" selection-start-line="306" selection-start-column="4" selection-end-line="306" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_STADIUMS.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/CREATE_TABLES_INDEXES.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="11" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/INSERT_INDIVIDUAL_MATCH.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="14" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/GETMAXIMUMATTENDANCE.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_MATCH_AND_PLAY.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="7" lean-forward="true" selection-end-line="162" />
         </state>
       </provider>
     </entry>
