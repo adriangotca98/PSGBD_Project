@@ -6,5 +6,5 @@ begin
     --populate_referee();
     --populate_stadium();
     --populate_team();
-    populate_match_and_play();
+    --populate_match_and_play();
 end;
