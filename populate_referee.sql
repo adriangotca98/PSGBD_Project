@@ -1,4 +1,4 @@
-create procedure populate_referee as
+create or replace procedure populate_referee as
     type vector is varray (1000) of varchar2(255);
     lista_nume vector := vector('Oliver', 'Jack', 'Harry', 'Jacob', 'Charlie', 'Thomas', 'George', 'Oscar', 'James',
                                 'William', 'Noah', 'Alfie', 'Joshua', 'Muhammad', 'Henry', 'Leo', 'Archie', 'Ethan',
@@ -40,5 +40,4 @@ begin
             insert into referee values (i, v_nume, v_prenume);
         end loop;
 end;
-/
 

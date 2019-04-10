@@ -1,4 +1,4 @@
-create procedure populate_stadiums as
+create or replace procedure populate_stadium as
     type varr is varray (400) of varchar2(255);
     lista_nume varr := varr('Adams Park', 'Alexandra Stadium', 'Almondvale Stadium', 'Amex Stadium', 'Anfield',
                             'Ashton Gate', 'B2net Stadium', 'Balmoor', 'Bayview Stadium', 'Bescot Stadium',
@@ -55,5 +55,4 @@ begin
             insert into stadium values (v_i, v_nume, v_city, v_founding_date, v_capacity);
         end loop;
 end;
-/
 

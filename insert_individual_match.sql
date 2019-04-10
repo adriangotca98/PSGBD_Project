@@ -1,4 +1,4 @@
-create procedure insert_individual_match(id_match int, id_team int) as
+create or replace procedure insert_individual_match(id_match int, id_team int) as
     type date_vector is varray(10) of date;
     id_referee int;
     attendance int;
@@ -36,5 +36,4 @@ begin
     --the insert
     insert into match values (id_match,id_referee,match_time,attendance);
 end;
-/
 
