@@ -42,8 +42,8 @@ begin
             while (i <= 1024)
                 loop
                     insert_individual_match(id_match, this_round(i));
-                    insert into play values (id_play, id_match, this_round(i));
-                    insert into play values (id_play + 1, id_match, this_round(i + 1));
+                    insert into play values (id_play, id_match, this_round(i), 1);
+                    insert into play values (id_play + 1, id_match, this_round(i + 1), 0);
                     i := i + 2;
                     id_play := id_play + 2;
                     id_match := id_match + 1;
@@ -92,16 +92,16 @@ begin
 
     --this is for the second visit!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-    i := 1024;
-    j := 1;
-    v_index:=1;
+    i := 1;
+    j := 1024;
+    v_index := 1;
     --make the first round
-    while (i > j)
+    while (i < j)
         loop
             this_round(v_index) := i;
             this_round(v_index + 1) := j;
-            i := i - 1;
-            j := j + 1;
+            i := i + 1;
+            j := j - 1;
             v_index := v_index + 2;
         end loop;
     --this_round(i) plays with this_round(i+1) for every odd i
@@ -111,9 +111,9 @@ begin
             --insert in match and play the matches from this round
             while (i <= 1024)
                 loop
-                    insert_individual_match(id_match, this_round(i));
-                    insert into play values (id_play, id_match, this_round(i));
-                    insert into play values (id_play + 1, id_match, this_round(i + 1));
+                    insert_individual_match(id_match, this_round(i+1));
+                    insert into play values (id_play, id_match, this_round(i), 0);
+                    insert into play values (id_play + 1, id_match, this_round(i + 1), 1);
                     i := i + 2;
                     id_play := id_play + 2;
                     id_match := id_match + 1;

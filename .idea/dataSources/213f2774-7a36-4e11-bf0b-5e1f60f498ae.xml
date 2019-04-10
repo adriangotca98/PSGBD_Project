@@ -34,8 +34,8 @@
     <schema id="11" parent="1" name="GAMBLER">
       <ObjectId>102</ObjectId>
       <CreatedTimestamp>2019-04-07.17:46:47</CreatedTimestamp>
-      <ModifiedTimestamp>2019-04-10.21:08:15</ModifiedTimestamp>
-      <IntrospectionTimestamp>2019-04-10.21:08:15</IntrospectionTimestamp>
+      <ModifiedTimestamp>2019-04-10.21:30:27</ModifiedTimestamp>
+      <IntrospectionTimestamp>2019-04-10.21:30:27</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -152,9 +152,9 @@
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="44" parent="11" name="PLAY">
-      <ObjectId>78308</ObjectId>
-      <CreatedTimestamp>2019-04-10.20:59:32</CreatedTimestamp>
-      <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
+      <ObjectId>78311</ObjectId>
+      <CreatedTimestamp>2019-04-10.21:29:06</CreatedTimestamp>
+      <ModifiedTimestamp>2019-04-10.21:29:06</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
     <table id="45" parent="11" name="PLAYER">
@@ -190,9 +190,9 @@
     <routine id="50" parent="11" name="CREATE_TABLE_INDEX">
       <ObjectId>78289</ObjectId>
       <RoutineKind>procedure</RoutineKind>
-      <SourceTextLength>4445</SourceTextLength>
+      <SourceTextLength>4476</SourceTextLength>
       <CreatedTimestamp>2019-04-10.20:59:26</CreatedTimestamp>
-      <ModifiedTimestamp>2019-04-10.20:59:26</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-04-10.21:24:17</ModifiedTimestamp>
     </routine>
     <routine id="51" parent="11" name="GET_MAXIMUM_ATTENDANCE">
       <ObjectId>78061</ObjectId>
@@ -213,10 +213,10 @@
     <routine id="53" parent="11" name="POPULATE_MATCH_AND_PLAY">
       <ObjectId>77550</ObjectId>
       <RoutineKind>procedure</RoutineKind>
-      <SourceTextLength>5668</SourceTextLength>
-      <DependsOnIds>7091,77551,78308</DependsOnIds>
+      <SourceTextLength>5684</SourceTextLength>
+      <DependsOnIds>7091,77551,78311</DependsOnIds>
       <CreatedTimestamp>2019-04-08.03:02:39</CreatedTimestamp>
-      <ModifiedTimestamp>2019-04-10.21:08:15</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-04-10.21:30:27</ModifiedTimestamp>
     </routine>
     <routine id="54" parent="11" name="POPULATE_REFEREE">
       <ObjectId>77114</ObjectId>
@@ -49515,76 +49515,81 @@
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="7099" parent="44" name="SYS_C0012235">
-      <ObjectId>78309</ObjectId>
+    <column id="7099" parent="44" name="HOME">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="7100" parent="44" name="SYS_C0012242">
+      <ObjectId>78312</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-04-10.20:59:32</CreatedTimestamp>
-      <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
+      <CreatedTimestamp>2019-04-10.21:29:06</CreatedTimestamp>
+      <ModifiedTimestamp>2019-04-10.21:29:06</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>ID_PLAY</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="7100" parent="44" name="SYS_C0012235">
+    <key id="7101" parent="44" name="SYS_C0012242">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-04-10.21:29:06</ModifiedTimestamp>
       <ColNames>ID_PLAY</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0012235</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012242</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="7101" parent="44" name="PLAY_FK_ID_MATCH">
-      <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
+    <foreign-key id="7102" parent="44" name="PLAY_FK_ID_MATCH">
+      <ModifiedTimestamp>2019-04-10.21:29:06</ModifiedTimestamp>
       <ColNames>ID_MATCH</ColNames>
       <RefSchemaName>GAMBLER</RefSchemaName>
       <RefTableName>MATCH</RefTableName>
       <RefKeyName>SYS_C0012199</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="7102" parent="44" name="PLAY_FK_ID_TEAM">
-      <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
+    <foreign-key id="7103" parent="44" name="PLAY_FK_ID_TEAM">
+      <ModifiedTimestamp>2019-04-10.21:29:06</ModifiedTimestamp>
       <ColNames>ID_TEAM</ColNames>
       <RefSchemaName>GAMBLER</RefSchemaName>
       <RefTableName>TEAM</RefTableName>
       <RefKeyName>SYS_C0012183</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="7103" parent="45" name="ID_PLAYER">
+    <column id="7104" parent="45" name="ID_PLAYER">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7104" parent="45" name="ID_TEAM">
+    <column id="7105" parent="45" name="ID_TEAM">
       <Position>2</Position>
       <DataType>NUMBER(*)|0s</DataType>
     </column>
-    <column id="7105" parent="45" name="FIRST_NAME">
+    <column id="7106" parent="45" name="FIRST_NAME">
       <Position>3</Position>
       <DataType>VARCHAR2(50 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7106" parent="45" name="LAST_NAME">
+    <column id="7107" parent="45" name="LAST_NAME">
       <Position>4</Position>
       <DataType>VARCHAR2(50 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7107" parent="45" name="NATIONALITY">
+    <column id="7108" parent="45" name="NATIONALITY">
       <Position>5</Position>
       <DataType>VARCHAR2(50 byte)|0s</DataType>
     </column>
-    <column id="7108" parent="45" name="DATE_OF_BIRTH">
+    <column id="7109" parent="45" name="DATE_OF_BIRTH">
       <Position>6</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <column id="7109" parent="45" name="POSITION">
+    <column id="7110" parent="45" name="POSITION">
       <Position>7</Position>
       <DataType>VARCHAR2(10 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7110" parent="45" name="VALUE">
+    <column id="7111" parent="45" name="VALUE">
       <Position>8</Position>
       <DataType>NUMBER(*)|0s</DataType>
     </column>
-    <index id="7111" parent="45" name="SYS_C0012189">
+    <index id="7112" parent="45" name="SYS_C0012189">
       <ObjectId>78295</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-04-10.20:59:32</CreatedTimestamp>
@@ -49593,14 +49598,14 @@
       <ColNames>ID_PLAYER</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="7112" parent="45" name="IDX_TEAM">
+    <index id="7113" parent="45" name="IDX_TEAM">
       <ObjectId>78310</ObjectId>
       <CreatedTimestamp>2019-04-10.20:59:32</CreatedTimestamp>
       <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>ID_TEAM</ColNames>
     </index>
-    <key id="7113" parent="45" name="SYS_C0012189">
+    <key id="7114" parent="45" name="SYS_C0012189">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
       <ColNames>ID_PLAYER</ColNames>
@@ -49608,7 +49613,7 @@
       <UnderlyingIndexName>SYS_C0012189</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="7114" parent="45" name="PLAYER_FK_ID_TEAM">
+    <foreign-key id="7115" parent="45" name="PLAYER_FK_ID_TEAM">
       <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
       <ColNames>ID_TEAM</ColNames>
       <RefSchemaName>GAMBLER</RefSchemaName>
@@ -49616,22 +49621,22 @@
       <RefKeyName>SYS_C0012183</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="7115" parent="46" name="ID_REFEREE">
+    <column id="7116" parent="46" name="ID_REFEREE">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7116" parent="46" name="FIRST_NAME">
+    <column id="7117" parent="46" name="FIRST_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(50 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7117" parent="46" name="LAST_NAME">
+    <column id="7118" parent="46" name="LAST_NAME">
       <Position>3</Position>
       <DataType>VARCHAR2(50 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="7118" parent="46" name="SYS_C0012194">
+    <index id="7119" parent="46" name="SYS_C0012194">
       <ObjectId>78297</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-04-10.20:59:32</CreatedTimestamp>
@@ -49640,7 +49645,7 @@
       <ColNames>ID_REFEREE</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="7119" parent="46" name="SYS_C0012194">
+    <key id="7120" parent="46" name="SYS_C0012194">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
       <ColNames>ID_REFEREE</ColNames>
@@ -49648,30 +49653,30 @@
       <UnderlyingIndexName>SYS_C0012194</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="7120" parent="47" name="ID_STADIUM">
+    <column id="7121" parent="47" name="ID_STADIUM">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7121" parent="47" name="NAME">
+    <column id="7122" parent="47" name="NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(50 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7122" parent="47" name="CITY">
+    <column id="7123" parent="47" name="CITY">
       <Position>3</Position>
       <DataType>VARCHAR2(20 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7123" parent="47" name="FOUNDING_DATE">
+    <column id="7124" parent="47" name="FOUNDING_DATE">
       <Position>4</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <column id="7124" parent="47" name="CAPACITY">
+    <column id="7125" parent="47" name="CAPACITY">
       <Position>5</Position>
       <DataType>NUMBER(*)|0s</DataType>
     </column>
-    <index id="7125" parent="47" name="SYS_C0012179">
+    <index id="7126" parent="47" name="SYS_C0012179">
       <ObjectId>78291</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-04-10.20:59:32</CreatedTimestamp>
@@ -49680,7 +49685,7 @@
       <ColNames>ID_STADIUM</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="7126" parent="47" name="SYS_C0012179">
+    <key id="7127" parent="47" name="SYS_C0012179">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
       <ColNames>ID_STADIUM</ColNames>
@@ -49688,32 +49693,32 @@
       <UnderlyingIndexName>SYS_C0012179</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="7127" parent="48" name="ID_SUBSTITUTION">
+    <column id="7128" parent="48" name="ID_SUBSTITUTION">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7128" parent="48" name="ID_PLAYER1">
+    <column id="7129" parent="48" name="ID_PLAYER1">
       <Position>2</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7129" parent="48" name="ID_PLAYER2">
+    <column id="7130" parent="48" name="ID_PLAYER2">
       <Position>3</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7130" parent="48" name="ID_MATCH">
+    <column id="7131" parent="48" name="ID_MATCH">
       <Position>4</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7131" parent="48" name="SUBSTITUTION_TIME">
+    <column id="7132" parent="48" name="SUBSTITUTION_TIME">
       <Position>5</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="7132" parent="48" name="SYS_C0012228">
+    <index id="7133" parent="48" name="SYS_C0012228">
       <ObjectId>78307</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-04-10.20:59:32</CreatedTimestamp>
@@ -49722,7 +49727,7 @@
       <ColNames>ID_SUBSTITUTION</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="7133" parent="48" name="SYS_C0012228">
+    <key id="7134" parent="48" name="SYS_C0012228">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
       <ColNames>ID_SUBSTITUTION</ColNames>
@@ -49730,7 +49735,7 @@
       <UnderlyingIndexName>SYS_C0012228</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="7134" parent="48" name="SUBSTITUTION_FK_ID_PLAYER1">
+    <foreign-key id="7135" parent="48" name="SUBSTITUTION_FK_ID_PLAYER1">
       <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
       <ColNames>ID_PLAYER1</ColNames>
       <RefSchemaName>GAMBLER</RefSchemaName>
@@ -49738,7 +49743,7 @@
       <RefKeyName>SYS_C0012189</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="7135" parent="48" name="SUBSTITUTION_FK_ID_PLAYER2">
+    <foreign-key id="7136" parent="48" name="SUBSTITUTION_FK_ID_PLAYER2">
       <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
       <ColNames>ID_PLAYER2</ColNames>
       <RefSchemaName>GAMBLER</RefSchemaName>
@@ -49746,7 +49751,7 @@
       <RefKeyName>SYS_C0012189</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="7136" parent="48" name="SUBSTITUTION_FK_ID_MATCH">
+    <foreign-key id="7137" parent="48" name="SUBSTITUTION_FK_ID_MATCH">
       <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
       <ColNames>ID_MATCH</ColNames>
       <RefSchemaName>GAMBLER</RefSchemaName>
@@ -49754,30 +49759,30 @@
       <RefKeyName>SYS_C0012199</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="7137" parent="49" name="ID_TEAM">
+    <column id="7138" parent="49" name="ID_TEAM">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7138" parent="49" name="NAME">
+    <column id="7139" parent="49" name="NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(50 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7139" parent="49" name="ID_STADIUM">
+    <column id="7140" parent="49" name="ID_STADIUM">
       <Position>3</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7140" parent="49" name="FOUNDING_DATE">
+    <column id="7141" parent="49" name="FOUNDING_DATE">
       <Position>4</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <column id="7141" parent="49" name="BUDGET">
+    <column id="7142" parent="49" name="BUDGET">
       <Position>5</Position>
       <DataType>NUMBER(*)|0s</DataType>
     </column>
-    <index id="7142" parent="49" name="SYS_C0012183">
+    <index id="7143" parent="49" name="SYS_C0012183">
       <ObjectId>78293</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-04-10.20:59:32</CreatedTimestamp>
@@ -49786,7 +49791,7 @@
       <ColNames>ID_TEAM</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="7143" parent="49" name="SYS_C0012183">
+    <key id="7144" parent="49" name="SYS_C0012183">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
       <ColNames>ID_TEAM</ColNames>
@@ -49794,7 +49799,7 @@
       <UnderlyingIndexName>SYS_C0012183</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="7144" parent="49" name="TEAM_FK_ID_STADIUM">
+    <foreign-key id="7145" parent="49" name="TEAM_FK_ID_STADIUM">
       <ModifiedTimestamp>2019-04-10.20:59:32</ModifiedTimestamp>
       <ColNames>ID_STADIUM</ColNames>
       <RefSchemaName>GAMBLER</RefSchemaName>
@@ -49802,19 +49807,19 @@
       <RefKeyName>SYS_C0012179</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <argument id="7145" parent="51">
+    <argument id="7146" parent="51">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>NUMBER|0s</DataType>
     </argument>
-    <argument id="7146" parent="51" name="ID_ECHIPA">
+    <argument id="7147" parent="51" name="ID_ECHIPA">
       <Position>1</Position>
       <DataType>NUMBER|0s</DataType>
     </argument>
-    <argument id="7147" parent="52" name="ID_MATCH">
+    <argument id="7148" parent="52" name="ID_MATCH">
       <Position>1</Position>
       <DataType>NUMBER|0s</DataType>
     </argument>
-    <argument id="7148" parent="52" name="ID_TEAM">
+    <argument id="7149" parent="52" name="ID_TEAM">
       <Position>2</Position>
       <DataType>NUMBER|0s</DataType>
     </argument>
