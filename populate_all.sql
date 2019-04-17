@@ -7,4 +7,6 @@ begin
     --populate_stadium();
     --populate_team();
     --populate_match_and_play();
+    --populate_players();
+    
 end;
