@@ -60,7 +60,7 @@ BEGIN
         id_match   INT  NOT NULL,
         goal_time  INT NOT NULL,
         id_player  INT  NOT NULL,
-        id_player_assist  INT  NOT NULL,
+        id_player_assist  INT,
         type VARCHAR2(55),
         CONSTRAINT GOAL_FK_ID_MATCH FOREIGN KEY (ID_MATCH) REFERENCES MATCH(ID_MATCH),
         CONSTRAINT GOAL_FK_ID_PLAYER FOREIGN KEY (ID_PLAYER) REFERENCES PLAYER(ID_PLAYER),
@@ -105,6 +105,10 @@ BEGIN
     )';
     EXECUTE IMMEDIATE 'CREATE INDEX idx_team
     ON PLAYER(id_team)';
+    EXECUTE IMMEDIATE 'CREATE INDEX idx_substitution_id_match
+    ON SUBSTITUTION(id_match)';
+    EXECUTE IMMEDIATE 'CREATE INDEX idx_first11_id_match
+    ON first11(id_match);';
     EXECUTE IMMEDIATE 'create index idx_team_position
     on player(id_team,position)';
 END;
