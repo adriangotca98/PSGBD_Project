@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A1A1D;
+    color: white;
+    font-family: 'Muli', sans-serif;
+}
+
+.active {
+    background-color: #950740;
+    color:white;
+}
+
+
+h1 {
+    color: #C3073F;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-top: 20vh;
+}
+
+h2 {
+    color: #950740;
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+}
+
+nav {
+    width:10%;
+    height:100vh;
+}
+
+nav > ul {
+    margin-top:5vh;
+    list-style: none;
+}
+
+nav > ul > li {
+    padding: 5%;
+}
+
+li:hover {
+    border-bottom: 1px solid #4E4E50;
+    cursor: pointer;
+}
+
+main {
+    width: 45%;
+    height:100vh;
+}
+
+
+/*colors:
+
+    black: #1A1A1D
+    gray: #4E4E50
+    maroon: #672232
+    dark-red: #950740
+    red: #C3073F
+
+ */

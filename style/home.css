@@ -1,0 +1,16 @@
+main {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    paddding: 5%;
+}
+
+main > section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main > section > em {
+    font-size: 40px;
+}
