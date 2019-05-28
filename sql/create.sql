@@ -111,4 +111,10 @@ BEGIN
     ON first11(id_match);';
     EXECUTE IMMEDIATE 'create index idx_team_position
     on player(id_team,position)';
+    EXECUTE IMMEDIATE 'CREATE INDEX idx_substitution_player_match
+    ON SUBSTITUTION(id_player1, id_match);';
+    EXECUTE IMMEDIATE 'CREATE INDEX idx_goal_id_match
+    ON GOAL(id_match)';
+    EXECUTE IMMEDIATE 'CREATE INDEX idx_cards_id_match
+    ON CARDS(id_match);';
 END;

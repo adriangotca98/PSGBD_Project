@@ -2,33 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd85de95-dbcb-4a6a-ac61-acefc0b8ce4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/213f2774-7a36-4e11-bf0b-5e1f60f498ae/storage_v2/_src_/schema/GAMBLER.qqchHw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/213f2774-7a36-4e11-bf0b-5e1f60f498ae/storage_v2/_src_/schema/GAMBLER.qqchHw.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/213f2774-7a36-4e11-bf0b-5e1f60f498ae/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6c3fa3d5-61c0-4c40-8969-530373b96ee2/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6c3fa3d5-61c0-4c40-8969-530373b96ee2/storage_v2/_src_/schema/STUDENT.Gw7Kug.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6c3fa3d5-61c0-4c40-8969-530373b96ee2/storage_v2/_src_/schema/STUDENT.Gw7Kug.zip" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/get_fantastic.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/fantastic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/fantastic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/213f2774-7a36-4e11-bf0b-5e1f60f498ae/storage_v2/_staging_/schema/GAMBLER.qqchHw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/213f2774-7a36-4e11-bf0b-5e1f60f498ae/storage_v2/_staging_/schema/GAMBLER.qqchHw/routine/GETMAXIMUMATTENDANCE.c5Cpow.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/213f2774-7a36-4e11-bf0b-5e1f60f498ae/storage_v2/_staging_/schema/GAMBLER.qqchHw/routine/GETMAXIMUMATTENDANCE.c5Cpow.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/213f2774-7a36-4e11-bf0b-5e1f60f498ae/storage_v2/_staging_/schema/GAMBLER.qqchHw/routine/INSERT_INIVIDUAL_MATCH.U79ZNw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/213f2774-7a36-4e11-bf0b-5e1f60f498ae/storage_v2/_staging_/schema/GAMBLER.qqchHw/routine/INSERT_INIVIDUAL_MATCH.U79ZNw.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/da338b77-9515-499a-86d0-ae48d60175ca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da338b77-9515-499a-86d0-ae48d60175ca.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/da338b77-9515-499a-86d0-ae48d60175ca/storage_v2/_src_/schema/GAMBLER.qqchHw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da338b77-9515-499a-86d0-ae48d60175ca/storage_v2/_src_/schema/GAMBLER.qqchHw.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_maximum_attendance.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/get_maximum_attendance.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insert_individual_match.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/insert_individual_match.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/populate_all.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/populate_all.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/populate_cards.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/populate_cards.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/populate_first11.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/populate_first11.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/populate_goal.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/populate_goal.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/populate_goals.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/populate_goals.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/populate_match_and_play.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/populate_match_and_play.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/populate_players.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/populate_players.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/populate_referee.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/populate_referee.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/populate_stadium.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/populate_stadium.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/populate_substituition.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/populate_substituition.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/populate_team.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/populate_team.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,29 +73,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/style/home.css">
+        <entry file="file://$PROJECT_DIR$/views/fantastic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="598">
+              <caret line="80" column="70" selection-start-line="80" selection-start-column="70" selection-end-line="80" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style/fantastic.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -130,6 +110,8 @@
       <find>v_tries</find>
       <find>goal</find>
       <find>height</find>
+      <find>oci</find>
+      <find>hel</find>
     </findStrings>
     <replaceStrings>
       <replace>FOR</replace>
@@ -146,12 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console_6.sql" />
-        <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/INSERT_INIVIDUAL_MATCH.sql" />
-        <option value="$PROJECT_DIR$/populate_match.sql" />
-        <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/CREATE_TABLES_INDEXES.sql" />
-        <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_REFEREE.sql" />
-        <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_STADIUMS.sql" />
         <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_TEAMS.sql" />
         <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/GETMAXIMUMATTENDANCE.sql" />
         <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/INSERT_INDIVIDUAL_MATCH.sql" />
@@ -172,8 +148,6 @@
         <option value="/5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_FIRST11.sql" />
         <option value="$PROJECT_DIR$/../populate_first11.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_2.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_3.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_4.sql" />
         <option value="$PROJECT_DIR$/is_playing.sql" />
         <option value="$PROJECT_DIR$/get_team.sql" />
@@ -192,14 +166,23 @@
         <option value="$PROJECT_DIR$/populate_goal.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_13.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console.sql" />
-        <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_1.sql" />
+        <option value="$PROJECT_DIR$/style/home.css" />
+        <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/views/home.html" />
         <option value="$PROJECT_DIR$/style/main.css" />
-        <option value="$PROJECT_DIR$/style/home.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_2.sql" />
+        <option value="$PROJECT_DIR$/sql/get_fantastic.sql" />
+        <option value="/f0fab9d4/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/GET_FANTASTIC.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_3.sql" />
+        <option value="$PROJECT_DIR$/views/fantastic.html" />
+        <option value="C:/utils/php/php.ini" />
+        <option value="$PROJECT_DIR$/style/fantastic.css" />
+        <option value="$PROJECT_DIR$/views/fantastic.php" />
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -222,11 +205,6 @@
             <path>
               <item name="PSGBD_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="PSGBD_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PSGBD_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PSGBD_Project" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -242,18 +220,18 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/" value="Oracle&#10;OracleSqlPlus" />
-    <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/populate_team.sql" />
-    <property name="settings.editor.selected.configurable" value="database.main2" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/fantastic.html" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Alex\PhpstormProjects\PSGBD_Project" />
-      <recent name="C:\Users\Alex\PhpstormProjects\PSGBD_Project\sql" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ADRIAN\ady_info\anul 2\PSGBD" />
       <recent name="D:\ADRIAN\ady_info\anul 2\PSGBD\PSGBD_Project" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alex\PhpstormProjects\PSGBD_Project" />
+      <recent name="C:\Users\Alex\PhpstormProjects\PSGBD_Project\sql" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -268,16 +246,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.home.html">
-    <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PSGBD_Project/views/home.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.fantastic.php">
+    <configuration name="fantastic.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PSGBD_Project/views/fantastic.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PSGBD_Project/views/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="fantastic.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/views/fantastic.php">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.fantastic.php" />
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="PHP Script.fantastic.php" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.home.html" />
+        <item itemvalue="JavaScript Debug.fantastic.php" />
+        <item itemvalue="PHP Script.fantastic.php" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -292,12 +279,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558950940139</updated>
-      <workItem from="1558950942154" duration="2680000" />
+      <workItem from="1558950942154" duration="9027000" />
+      <workItem from="1559045827341" duration="327000" />
+      <workItem from="1559046399494" duration="2541000" />
+      <workItem from="1559048955682" duration="995000" />
     </task>
+    <task id="LOCAL-00001" summary="front-end prototype">
+      <created>1558953857462</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558953857462</updated>
+    </task>
+    <task id="LOCAL-00002" summary="retouch">
+      <created>1558954167520</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558954167520</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2680000" />
+    <option name="totallyTimeSpent" value="12890000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -312,192 +317,102 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
-      <window_info content_ui="combo" id="Database" order="1" weight="0.1641791" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26012793" />
+      <window_info content_ui="combo" id="Database" order="1" weight="0.1663113" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="4" weight="0.32885906" />
-      <window_info anchor="bottom" id="Database Console" order="5" sideWeight="0.4977307" visible="true" weight="0.26653883" />
+      <window_info anchor="bottom" id="Database Console" order="5" sideWeight="0.4977307" weight="0.3336529" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug" order="7" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.32981783" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50226927" side_tool="true" weight="0.2667758" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32981783" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32981783" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="12" weight="0.38255033" />
       <window_info anchor="right" id="Structure" order="0" side_tool="true" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="front-end prototype" />
+    <MESSAGE value="retouch" />
+    <option name="LAST_COMMIT_MESSAGE" value="retouch" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="das://213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/table/PLAYER" />
-    <entry file="das://213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/table/FIRST11" />
-    <entry file="das://213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/table/CARDS" />
-    <entry file="das://213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/table/STADIUM" />
-    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/CREATE_TABLE_INDEX.sql" />
-    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_FIRST11.sql" />
-    <entry file="dbSrc:///5f8eed5a/213f2774-7a36-4e11-bf0b-5e1f60f498ae/schema/GAMBLER/routine/POPULATE_PLAYERS.sql" />
-    <entry file="file://$PROJECT_DIR$/../populate_first11.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/213f2774-7a36-4e11-bf0b-5e1f60f498ae/console.sql" />
-    <entry file="file://$PROJECT_DIR$/sql/populate_goals.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_2.sql" />
-    <entry file="file://$PROJECT_DIR$/sql/populate_stadium.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_3.sql" />
-    <entry file="file://$PROJECT_DIR$/sql/populate_team.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="254" column="34" selection-start-line="254" selection-start-column="34" selection-end-line="254" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/get_maximum_attendance.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbSrc:///4e8d632c/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/POPULATE_MATCH_AND_PLAY.sql" />
-    <entry file="dbSrc:///4e8d632c/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/GET_MAXIMUM_ATTENDANCE.sql" />
-    <entry file="dbSrc:///4e8d632c/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/INSERT_INDIVIDUAL_MATCH.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_4.sql" />
-    <entry file="file://$PROJECT_DIR$/is_playing.sql" />
-    <entry file="file://$PROJECT_DIR$/get_team.sql" />
-    <entry file="file://$PROJECT_DIR$/sql/populate_first11.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="48" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_6.sql" />
-    <entry file="file://$PROJECT_DIR$/sql/populate_match_and_play.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_5.sql" />
-    <entry file="das://da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/table/FIRST11" />
-    <entry file="dbSrc:///4e8d632c/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/POPULATE_SUBSTITUTION.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_7.sql" />
-    <entry file="file://$PROJECT_DIR$/sql/insert_individual_match.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="36" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_8.sql" />
-    <entry file="file://$PROJECT_DIR$/sql/populate_players.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="121" column="45" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_9.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_11.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_10.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_12.sql" />
-    <entry file="dbSrc:///4e8d632c/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/POPULATE_CARDS.sql" />
-    <entry file="file://$PROJECT_DIR$/sql/populate_substituition.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="959">
-          <caret line="88" column="63" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/populate_goal.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="235" column="8" selection-start-line="235" selection-start-column="8" selection-end-line="235" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_14.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_13.sql" />
-    <entry file="dbSrc:///4e8d632c/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/POPULATE_GOAL.sql" />
-    <entry file="file://$PROJECT_DIR$/sql/populate_all.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/populate_referee.sql">
+    <entry file="dbSrc:///f0fab9d4/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/POPULATE_SUBSTITUTION.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="47" selection-start-column="47" selection-end-line="1" selection-end-column="50" />
+          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-line="1" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/populate_cards.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_1.sql">
+    <entry file="dbSrc:///f0fab9d4/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/CREATE_TABLE_INDEX.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.html">
+    <entry file="dbSrc:///f0fab9d4/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/INSERT_INDIVIDUAL_MATCH.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.html">
+    <entry file="dbSrc:///f0fab9d4/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/GET_FANTASTIC.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_2.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/main.css">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da338b77-9515-499a-86d0-ae48d60175ca/console_3.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state>
+          <caret selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/home.css">
+    <entry file="dbSrc:///f0fab9d4/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/POPULATE_CARDS.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="357">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/get_fantastic.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/utils/php/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="937" column="15" lean-forward="true" selection-start-line="937" selection-start-column="15" selection-end-line="937" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/fantastic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/fantastic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="80" column="70" selection-start-line="80" selection-start-column="70" selection-end-line="80" selection-end-column="70" />
         </state>
       </provider>
     </entry>

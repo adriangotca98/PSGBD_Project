@@ -32,7 +32,7 @@
       <ObjectId>49</ObjectId>
       <CreatedTimestamp>2019-05-03.17:39:18</CreatedTimestamp>
       <ModifiedTimestamp>2019-05-06.17:16:40</ModifiedTimestamp>
-      <IntrospectionTimestamp>2019-05-06.17:27:02</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2019-05-28.14:16:06</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -157,7 +157,7 @@
       <ObjectId>22352</ObjectId>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>2061</SourceTextLength>
-      <DependsOnIds>4851,8960,22336,22313,22319,22356</DependsOnIds>
+      <DependsOnIds>4851,8960,22313,22319,22336,22356</DependsOnIds>
       <CreatedTimestamp>2019-05-04.22:20:41</CreatedTimestamp>
       <ModifiedTimestamp>2019-05-06.15:18:12</ModifiedTimestamp>
     </routine>
@@ -173,7 +173,7 @@
       <ObjectId>22369</ObjectId>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>8610</SourceTextLength>
-      <DependsOnIds>4851,8960,22336,22309,22319,22323,22376</DependsOnIds>
+      <DependsOnIds>4851,8960,22309,22319,22323,22336,22376</DependsOnIds>
       <CreatedTimestamp>2019-05-06.16:06:44</CreatedTimestamp>
       <ModifiedTimestamp>2019-05-06.17:16:40</ModifiedTimestamp>
     </routine>
