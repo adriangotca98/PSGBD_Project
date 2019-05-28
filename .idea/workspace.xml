@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd85de95-dbcb-4a6a-ac61-acefc0b8ce4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/get_fantastic.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/fantastic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/fantastic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/213f2774-7a36-4e11-bf0b-5e1f60f498ae/storage_v2/_staging_/schema/GAMBLER.qqchHw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/213f2774-7a36-4e11-bf0b-5e1f60f498ae/storage_v2/_staging_/schema/GAMBLER.qqchHw/routine/GETMAXIMUMATTENDANCE.c5Cpow.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/213f2774-7a36-4e11-bf0b-5e1f60f498ae/storage_v2/_staging_/schema/GAMBLER.qqchHw/routine/GETMAXIMUMATTENDANCE.c5Cpow.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/213f2774-7a36-4e11-bf0b-5e1f60f498ae/storage_v2/_staging_/schema/GAMBLER.qqchHw/routine/INSERT_INIVIDUAL_MATCH.U79ZNw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/213f2774-7a36-4e11-bf0b-5e1f60f498ae/storage_v2/_staging_/schema/GAMBLER.qqchHw/routine/INSERT_INIVIDUAL_MATCH.U79ZNw.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/da338b77-9515-499a-86d0-ae48d60175ca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da338b77-9515-499a-86d0-ae48d60175ca.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/da338b77-9515-499a-86d0-ae48d60175ca/storage_v2/_src_/schema/GAMBLER.qqchHw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da338b77-9515-499a-86d0-ae48d60175ca/storage_v2/_src_/schema/GAMBLER.qqchHw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.html" afterDir="false" />
-    </list>
+    <list default="true" id="cd85de95-dbcb-4a6a-ac61-acefc0b8ce4e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/fantastic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="80" column="70" selection-start-line="80" selection-start-column="70" selection-end-line="80" selection-end-column="70" />
+            <state relative-caret-position="516">
+              <caret line="69" column="33" lean-forward="true" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -282,7 +265,7 @@
       <workItem from="1558950942154" duration="9027000" />
       <workItem from="1559045827341" duration="327000" />
       <workItem from="1559046399494" duration="2541000" />
-      <workItem from="1559048955682" duration="995000" />
+      <workItem from="1559048955682" duration="1864000" />
     </task>
     <task id="LOCAL-00001" summary="front-end prototype">
       <created>1558953857462</created>
@@ -298,11 +281,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558954167520</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fantastic team added">
+      <created>1559050417560</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559050417560</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12890000" />
+    <option name="totallyTimeSpent" value="13759000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -315,14 +305,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26012793" />
       <window_info content_ui="combo" id="Database" order="1" weight="0.1663113" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32885906" />
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="4" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Console" order="5" sideWeight="0.4977307" weight="0.3336529" />
@@ -342,7 +331,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="front-end prototype" />
     <MESSAGE value="retouch" />
-    <option name="LAST_COMMIT_MESSAGE" value="retouch" />
+    <MESSAGE value="fantastic team added" />
+    <option name="LAST_COMMIT_MESSAGE" value="fantastic team added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="dbSrc:///f0fab9d4/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/POPULATE_SUBSTITUTION.sql">
@@ -411,8 +401,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/fantastic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="80" column="70" selection-start-line="80" selection-start-column="70" selection-end-line="80" selection-end-column="70" />
+        <state relative-caret-position="516">
+          <caret line="69" column="33" lean-forward="true" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
         </state>
       </provider>
     </entry>
