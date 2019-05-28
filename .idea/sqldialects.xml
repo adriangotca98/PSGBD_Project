@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/sql/get_fantastic.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/sql/get_maximum_attendance.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/sql/insert_individual_match.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/sql/player_id_to_name.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/sql/populate_all.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/sql/populate_cards.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/sql/populate_first11.sql" dialect="OracleSqlPlus" />

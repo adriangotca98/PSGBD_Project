@@ -9,7 +9,7 @@ begin
     --populate_match_and_play();
     --populate_players();
     --populate_first11();
-  --POPULATE_SUBSTITUTION();
-  --POPULATE_CARDS();
-  POPULATE_GOAL();
+    --POPULATE_SUBSTITUTION();
+    --POPULATE_CARDS();
+    POPULATE_GOAL();
 end;

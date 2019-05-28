@@ -171,29 +171,16 @@ begin
   end loop;
 
 
-  DBMS_OUTPUT.put_line(gk_score);
-  DBMS_OUTPUT.put_line(lb_score);
-  DBMS_OUTPUT.put_line(rb_score);
-  DBMS_OUTPUT.put_line(cb1_score);
-  DBMS_OUTPUT.put_line(cb2_score);
-  DBMS_OUTPUT.put_line(lm_score);
-  DBMS_OUTPUT.put_line(rm_score);
-  DBMS_OUTPUT.put_line(cm1_score);
-  DBMS_OUTPUT.put_line(cm2_score);
-  DBMS_OUTPUT.put_line(st1_score);
-  DBMS_OUTPUT.put_line(st2_score);
-
-
-  DBMS_OUTPUT.put_line(gk_id);
-  DBMS_OUTPUT.put_line(lb_id);
-  DBMS_OUTPUT.put_line(rb_id);
-  DBMS_OUTPUT.put_line(cb1_id);
-  DBMS_OUTPUT.put_line(cb2_id);
-  DBMS_OUTPUT.put_line(lm_id);
-  DBMS_OUTPUT.put_line(rm_id);
-  DBMS_OUTPUT.put_line(cm1_id);
-  DBMS_OUTPUT.put_line(cm2_id);
-  DBMS_OUTPUT.put_line(st1_id);
-  DBMS_OUTPUT.put_line(st2_id);
-  return res_id.count;
+  DBMS_OUTPUT.put_line('Best goalkeeper with a rating of ' || gk_score || ' is : ' || ID_TO_NAME(gk_id));
+  DBMS_OUTPUT.put_line('First centre back with a rating of ' || cb1_score || ' is : ' || ID_TO_NAME(cb1_id));
+  DBMS_OUTPUT.put_line('Second centre back with a rating of ' || cb2_score || ' is : ' || ID_TO_NAME(cb2_id));
+  DBMS_OUTPUT.put_line('Best left back with a rating of ' || lb_score || ' is : ' || ID_TO_NAME(lb_id));
+  DBMS_OUTPUT.put_line('Best right back with a rating of ' || rb_score || ' is : ' || ID_TO_NAME(rb_id));
+  DBMS_OUTPUT.put_line('First centre midfilder with a rating of ' || cm1_score || ' is : ' || ID_TO_NAME(cm1_id));
+  DBMS_OUTPUT.put_line('Second centre midfilder with a rating of ' || cm2_score || ' is : ' || ID_TO_NAME(cm2_id));
+  DBMS_OUTPUT.put_line('Best left midfilder with a rating of ' || lm_score || ' is : ' || ID_TO_NAME(lm_id));
+  DBMS_OUTPUT.put_line('Best right midfilder with a rating of ' || rm_score || ' is : ' || ID_TO_NAME(rm_id));
+  DBMS_OUTPUT.put_line('First striker with a rating of ' || st1_score || ' is : ' || ID_TO_NAME(st1_id));
+  DBMS_OUTPUT.put_line('Second striker with a rating of ' || st2_score || ' is : ' || ID_TO_NAME(st2_id));
+  return 0;
 end;
