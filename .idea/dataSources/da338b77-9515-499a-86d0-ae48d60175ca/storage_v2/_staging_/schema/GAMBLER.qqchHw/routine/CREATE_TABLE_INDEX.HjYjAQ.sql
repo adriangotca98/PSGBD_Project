@@ -1,4 +1,4 @@
-create or replace procedure create_table_index as
+create procedure create_table_index as
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE stadium CASCADE CONSTRAINTS';
@@ -103,7 +103,7 @@ BEGIN
         CONSTRAINT PLAY_FK_ID_MATCH FOREIGN KEY (ID_MATCH) REFERENCES MATCH(ID_MATCH),
         CONSTRAINT PLAY_fk_id_team FOREIGN KEY (id_team) REFERENCES team (id_team)
     )';
-    EXECUTE IMMEDIATE 'CREATE INDEX idx_player_team
+    EXECUTE IMMEDIATE 'CREATE INDEX idx_team
     ON PLAYER(id_team)';
     EXECUTE IMMEDIATE 'CREATE INDEX idx_substitution_match
     ON SUBSTITUTION(id_match)';
@@ -116,5 +116,7 @@ BEGIN
     EXECUTE IMMEDIATE 'CREATE INDEX idx_goal_match
     ON GOAL(id_match)';
     EXECUTE IMMEDIATE 'CREATE INDEX idx_cards_match
-    ON CARDS(id_match)';
+    ON CARDS(id_match);';
 END;
+/
+
