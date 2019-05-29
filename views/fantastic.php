@@ -33,7 +33,7 @@
 
 <html lang="EN">
 <head>
-    <title>The Gambler</title>
+    <title>The Gambler | Fantastic Team</title>
     <link rel="stylesheet" href="../style/main.css"/>
     <link rel="stylesheet" href="../style/fantastic.css"/>
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">

@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/sql/create.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/sql/get_fantastic.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/sql/get_maximum_attendance.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/sql/insert_individual_match.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/sql/player_id_to_name.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/sql/populate_all.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/sql/populate_cards.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/sql/populate_first11.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/sql/populate_goal.sql" dialect="Oracle" />
-    <file url="file://$PROJECT_DIR$/sql/populate_match_and_play.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/sql/populate_players.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/sql/populate_referee.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/sql/populate_stadium.sql" dialect="Oracle" />
-    <file url="file://$PROJECT_DIR$/sql/populate_substituition.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/sql/populate_team.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/sql/populate_all.sql" dialect="Oracle" />
   </component>
 </project>

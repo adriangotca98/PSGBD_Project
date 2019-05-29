@@ -19,3 +19,12 @@ main > header > * {
 main > section {
     height:80vh;
 }
+
+.lineups {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+h4 {
+    color:#C3073F;
+}
