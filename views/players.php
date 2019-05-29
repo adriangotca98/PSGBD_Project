@@ -33,7 +33,7 @@
 
 <html lang="EN">
 <head>
-    <title>The Gambler | Fantastic Team</title>
+    <title>The Gambler | Fantastic team</title>
     <link rel="stylesheet" href="../style/main.css"/>
     <link rel="stylesheet" href="../style/fantastic.css"/>
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
@@ -46,42 +46,49 @@
     <h2> Football Statistics Provider </h2>
     <ul>
         <li><a href="home.html">Home</a></li>
-        <li>Players</li>
+        <li class="active">Players</li>
         <li>Teams</li>
         <li>Matches</li>
-        <li class="active">Fantastic Team</li>
+        <li>Fantastic Team</li>
     </ul>
 </nav>
 
 <main>
     <header>
         <form method="get">
-            Select the stage for which the fantastic team should be generated: <br>
-            <input type="number" min="1" max="1023" name="stage"/>
+            Search for the player you want to have information: <br>
+            <input type="text" name="name"/>
             <input type="submit" value="Submit"/>
         </form>
     </header>
     <section>
 
         <?php
-            if (isset($_GET['stage']))
+            include 'credentials.php';
+            if (isset($_GET['name']))
             {
-                $stage = $_GET['stage'];
+                $name = $_GET['name'];
                 $c = oci_connect($username, $password, "//localhost/XE");
 
                 // Turn on buffering of output
                 SetServerOutput($c, true);
 
                 // Create some output
-                $s = oci_parse($c, "declare begin dbms_output.put_line(get_fantastic(".$stage.", 1)); end;");
+                $s = oci_parse($c, "declare begin get_players('$name'); end;");
                 oci_execute($s);
 
                 // Display the output
                 $output = GetDbmsOutput($c);
-                echo "<h3>The Fantastic Team of stage ".$stage."</h3>";
-                for ($i=0; $i<11; $i++)
-                    echo "<p>$output[$i]</p>";
-
+                echo '<h4> Choose the exact player you want to get information about from the list below:</h4><br>';
+                if ($output){
+                    foreach ($output as $line){
+                        $plusses=str_replace(" ","+",$line);
+                        $pos=strpos($line,"||");
+                        $id=intval(substr($line,$pos+2));
+                        $line=substr($line,0,$pos);
+                        echo '<p><a href="player.php?id='.$id.'">'.$line.'</a></p>';
+                    }
+                }
             }
         ?>
 

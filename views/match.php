@@ -65,11 +65,12 @@ function GetDbmsOutput($c)
     <section>
 
         <?php
+        include 'credentials.php';
         if (isset($_GET['match']))
         {
             $match = $_GET['match'];
 
-            $c = oci_connect("gambler", "gambler", "//localhost/XE");
+            $c = oci_connect($username, $password, "//localhost/XE");
 
             // Turn on buffering of output
             SetServerOutput($c, true);

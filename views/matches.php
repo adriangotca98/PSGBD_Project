@@ -65,25 +65,26 @@ function GetDbmsOutput($c)
     <section>
 
         <?php
-        if (isset($_GET['stage']))
-        {
-            $stage = $_GET['stage'];
-            $c = oci_connect("gambler", "gambler", "//localhost/XE");
+            include 'credentials.php';
+            if (isset($_GET['stage']))
+            {
+                $stage = $_GET['stage'];
+                $c = oci_connect($username, $password, "//localhost/XE");
 
-            // Turn on buffering of output
-            SetServerOutput($c, true);
+                // Turn on buffering of output
+                SetServerOutput($c, true);
 
-            // Create some output
-            $s = oci_parse($c, "declare begin dbms_output.put_line(get_matches(".$stage.")); end;");
-            oci_execute($s);
+                // Create some output
+                $s = oci_parse($c, "declare begin dbms_output.put_line(get_matches(".$stage.")); end;");
+                oci_execute($s);
 
-            // Display the output
-            $output = GetDbmsOutput($c);
-            echo "<h3>The Matches of stage ".$stage."</h3>";
-            for ($i=0; $i<1024; $i+=2)
-                echo "<p><a href='match.php?match=".(($stage-1)*512+($i/2+1))."'>".($i/2+1)." ".$output[$i]." vs ".$output[$i+1]."</a></p>";
+                // Display the output
+                $output = GetDbmsOutput($c);
+                echo "<h3>The Matches of stage ".$stage."</h3>";
+                for ($i=0; $i<1024; $i+=2)
+                    echo "<p><a href='match.php?match=".(($stage-1)*512+($i/2+1))."'>".($i/2+1)." ".$output[$i]." vs ".$output[$i+1]."</a></p>";
 
-        }
+            }
         ?>
 
     </section>
