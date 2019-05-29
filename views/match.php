@@ -137,6 +137,21 @@ function GetDbmsOutput($c)
             echo "</ul>";
             echo "</div>";
 
+            $nxt = 38+$goal1+$goal2;
+            $nr1 = $output[$nxt];
+            $nr2 = $output[$nxt+1];
+            echo "<br><h4>Cards</h4>";
+            echo "<div class='lineups'>";
+            echo "<ul>";
+            for ($i=$nxt+2; $i<=$nxt+2+$nr1-1; $i++)
+                echo "<li> $output[$i] </li>";
+            echo "</ul>";
+            echo "<ul>";
+            for ($i=$nxt+2+$nr1; $i<=$nxt+2+$nr1+$nr2-1; $i++)
+                echo "<li> $output[$i] </li>";
+            echo "</ul>";
+            echo "</div>";
+
         }
         ?>
 

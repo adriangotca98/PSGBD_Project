@@ -18,6 +18,7 @@ main > header > * {
 
 main > section {
     height:80vh;
+    padding:2em;
 }
 
 .lineups {

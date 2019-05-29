@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd85de95-dbcb-4a6a-ac61-acefc0b8ce4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/match.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/matches.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/populate_all.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/populate_all.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/fantastic.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/fantastic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/fantastic.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/fantastic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/match.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/match.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/fantastic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
+            <state relative-caret-position="17">
               <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
             </state>
           </provider>
@@ -76,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/fantastic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="340">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -94,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/match.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="113" column="41" lean-forward="true" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+            <state relative-caret-position="684">
+              <caret line="145" column="52" lean-forward="true" selection-start-line="145" selection-start-column="52" selection-end-line="145" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -200,8 +193,8 @@
         <option value="$PROJECT_DIR$/views/fantastic.php" />
         <option value="$PROJECT_DIR$/views/matches.php" />
         <option value="$PROJECT_DIR$/style/main.css" />
-        <option value="$PROJECT_DIR$/style/fantastic.css" />
         <option value="$PROJECT_DIR$/views/match.php" />
+        <option value="$PROJECT_DIR$/style/fantastic.css" />
       </list>
     </option>
   </component>
@@ -312,7 +305,7 @@
       <workItem from="1559106330220" duration="1105000" />
       <workItem from="1559107478077" duration="2850000" />
       <workItem from="1559110342737" duration="162000" />
-      <workItem from="1559110517302" duration="2678000" />
+      <workItem from="1559110517302" duration="4114000" />
     </task>
     <task id="LOCAL-00001" summary="front-end prototype">
       <created>1558953857462</created>
@@ -335,11 +328,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559050417560</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="partial work on matches">
+      <created>1559113370466</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559113370466</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20554000" />
+    <option name="totallyTimeSpent" value="21990000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -352,7 +352,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26705757" />
       <window_info content_ui="combo" id="Database" order="1" weight="0.16471216" />
@@ -380,7 +379,8 @@
     <MESSAGE value="front-end prototype" />
     <MESSAGE value="retouch" />
     <MESSAGE value="fantastic team added" />
-    <option name="LAST_COMMIT_MESSAGE" value="fantastic team added" />
+    <MESSAGE value="partial work on matches" />
+    <option name="LAST_COMMIT_MESSAGE" value="partial work on matches" />
   </component>
   <component name="editorHistoryManager">
     <entry file="dbSrc:///f0fab9d4/da338b77-9515-499a-86d0-ae48d60175ca/schema/GAMBLER/routine/POPULATE_SUBSTITUTION.sql" />
@@ -493,38 +493,10 @@
     <entry file="file://$PROJECT_DIR$/style/home.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/populate_all.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/fantastic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sql/create.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2006">
           <caret line="118" column="23" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/fantastic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -537,8 +509,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/match.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="113" column="41" lean-forward="true" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+        <state relative-caret-position="684">
+          <caret line="145" column="52" lean-forward="true" selection-start-line="145" selection-start-column="52" selection-end-line="145" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/fantastic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/populate_all.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/fantastic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
