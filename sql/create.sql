@@ -103,18 +103,27 @@ BEGIN
         CONSTRAINT PLAY_FK_ID_MATCH FOREIGN KEY (ID_MATCH) REFERENCES MATCH(ID_MATCH),
         CONSTRAINT PLAY_fk_id_team FOREIGN KEY (id_team) REFERENCES team (id_team)
     )';
-    EXECUTE IMMEDIATE 'CREATE INDEX idx_team
-    ON PLAYER(id_team)';
-    EXECUTE IMMEDIATE 'CREATE INDEX idx_substitution_id_match
-    ON SUBSTITUTION(id_match)';
     EXECUTE IMMEDIATE 'CREATE INDEX idx_first11_id_match
     ON first11(id_match);';
     EXECUTE IMMEDIATE 'create index idx_team_position
     on player(id_team,position)';
-    EXECUTE IMMEDIATE 'CREATE INDEX idx_substitution_player_match
-    ON SUBSTITUTION(id_player1, id_match);';
+    EXECUTE IMMEDIATE 'CREATE INDEX idx_team
+    ON PLAYER(id_team)';
+    EXECUTE IMMEDIATE 'CREATE INDEX idx_substitution_id_match
+    ON SUBSTITUTION(id_match)';
+    EXECUTE IMMEDIATE 'CREATE INDEX idx_substitution_player1_match
+    ON SUBSTITUTION(id_player1, id_match)';
+    --below query needs to be executed!!!!
+    EXECUTE IMMEDIATE 'CREATE INDEX idx_substitution_player2_match
+    ON SUBSTITUTION(id_player2, id_match)';
     EXECUTE IMMEDIATE 'CREATE INDEX idx_goal_id_match
     ON GOAL(id_match)';
+    --below query needs to be executed!!!!
+    EXECUTE IMMEDIATE 'CREATE INDEX idx_goal_player
+    ON GOAL(id_player)';
+    --below query needs to be executed!!!!
+    EXECUTE IMMEDIATE 'CREATE INDEX idx_goal_player_assist
+    ON GOAL(id_player_assist)';
     EXECUTE IMMEDIATE 'CREATE INDEX idx_cards_id_match
     ON CARDS(id_match);';
 END;
