@@ -45,11 +45,11 @@ function GetDbmsOutput($c)
     <h1> The Gambler</h1>
     <h2> Football Statistics Provider </h2>
     <ul>
-        <li><a href="home.html">Home</a></li>
-        <li>Players</li>
-        <li>Teams</li>
-        <li class="active">Matches</li>
-        <li>Fantastic Team</li>
+        <li><a href="home.html">Fantastic Team</a></li>
+        <li><a href="players.php">Players</a></li>
+        <li><a href="teams.php">Teams</a></li>
+        <li class="active"><a href="matches.php">Matches</a></li>
+        <li><a href="fantastic.php">Fantastic Team</a></li>
     </ul>
 </nav>
 

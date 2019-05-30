@@ -46,10 +46,10 @@
     <h2> Football Statistics Provider </h2>
     <ul>
         <li><a href="home.html">Home</a></li>
-        <li>Players</li>
-        <li class="active">Teams</li>
-        <li>Matches</li>
-        <li>Fantastic Team</li>
+        <li><a href="players.php">Players</a></li>
+        <li class="active"><a href="teams.php">Teams</a></li>
+        <li><a href="matches.php">Matches</a></li>
+        <li><a href="fantastic.php">Fantastic Team</a></li>
     </ul>
 </nav>
 
